@@ -2,12 +2,12 @@ Ekurtosis
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) distribution [ekurtosis](https://en.wikipedia.org/wiki/ekurtosis).
+> [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) distribution [excess kurtosis](https://en.wikipedia.org/wiki/Kurtosis).
 
-The [ekurtosis](https://en.wikipedia.org/wiki/ekurtosis) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) random variable is
+The [excess kurtosis](https://en.wikipedia.org/wiki/Kurtosis) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\operatorname{}\left[ X \right] = " data-equation="eq:ekurtosis">
-	<img src="" alt="ekurtosis for a Chi-squared distribution.">
+<div class="equation" align="center" data-raw-text="\gamma_2 = \frac{12}{k}" data-equation="eq:ekurtosis">
+	<img src="https://cdn.rawgit.com/distributions-io/chisquare-ekurtosis/f9045dc0bbde0215c411e73536bb50d3e30c0f03/docs/img/eqn.svg" alt="Excess kurtosis for a Chi-squared distribution.">
 	<br>
 </div>
 
@@ -31,7 +31,7 @@ var ekurtosis = require( 'distributions-chisquare-ekurtosis' );
 
 #### ekurtosis( k[, opts] )
 
-Computes the [ekurtosis](https://en.wikipedia.org/wiki/ekurtosis) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) distribution with parameter `k`. `k` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
+Computes the [excess kurtosis](https://en.wikipedia.org/wiki/Kurtosis) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) distribution with parameter `k`. `k` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
 
 ``` javascript
 var matrix = require( 'dstructs-matrix' ),
@@ -176,7 +176,7 @@ bool = ( mat === out );
 
 ## Notes
 
-*	If an element is __not__ a positive number, the [ekurtosis](https://en.wikipedia.org/wiki/ekurtosis) is `NaN`.
+*	If an element is __not__ a positive number, the [excess kurtosis](https://en.wikipedia.org/wiki/Kurtosis) is `NaN`.
 
 	``` javascript
 	var k, out;
